@@ -21,7 +21,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             title="Github"
           >
-            <Github className="w-7 h-7"/>
+            <Github className="w-7 h-7 hover:text-highlight transition-colors duration-500"/>
           </a>
           <a
             href="https://www.linkedin.com/in/lucas--jin/"
@@ -29,14 +29,14 @@ export default function Footer() {
             rel="noopener noreferrer"
             title="aedin"
           >
-            <Linkedin className="w-7 h-7"/>
+            <Linkedin className="w-7 h-7 hover:text-highlight transition-colors duration-500"/>
           </a>
           <a
             href="mailto:lucasjin.hh@gmail.com"
             rel="noopener noreferrer"
             title="Mail"
           >
-            <Mail className="w-7 h-7"/>
+            <Mail className="w-7 h-7 hover:text-highlight transition-colors duration-500"/>
           </a>
           <a
             href="https://lucasjin.substack.com/?r=6ecjb4&utm_campaign=pub-share-checklist"
@@ -44,26 +44,26 @@ export default function Footer() {
             rel="noopener noreferrer"
             title="Substack"
           >
-            <Bookmark className="w-7 h-7"/>
+            <Bookmark className="w-7 h-7 hover:text-highlight transition-colors duration-500"/>
           </a>
         </nav>
         <nav className="flex gap-1 justify-end">
           <a
             href="https://cs.uwatering.com/#www.lucasjin.co?nav=prev"
           >
-            <MoveLeft className="w-8"/>
+            <MoveLeft className="w-8 hover:text-highlight transition-colors duration-500"/>
           </a>{" "}
           <a
             href="https://cs.uwatering.com/#www.lucasjin.co"
             target="_blank"
-            className="w-8"
+            className="w-8 hover:text-highlight transition-colors duration-500"
           >
             <WebringIcon />
           </a>
           <a
             href="https://cs.uwatering.com/#www.lucasjin.co?nav=next"
           >
-            <MoveRight className="w-8"/>
+            <MoveRight className="w-8 hover:text-highlight transition-colors duration-500"/>
           </a>
         </nav>
       </div>
