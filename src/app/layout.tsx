@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${garamond.variable} ${dm.variable}`}>
+      <body className={`${garamond.variable} ${dm.variable} p-12`}>
         {children}
       </body>
     </html>
