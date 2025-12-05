@@ -67,7 +67,7 @@ export default function Footer() {
           </a>
         </nav>
       </div>
-      <p className="text-lg">Lucas Jin © 2025</p>
+      <p className="text-base">Lucas Jin © 2025</p>
     </footer>
   );
 }

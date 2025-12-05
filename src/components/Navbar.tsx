@@ -6,7 +6,7 @@ export default function Navbar({
   currPage: "home" | "portfolio";
 }) {
   return (
-    <nav className="flex justify-between mb-3">
+    <nav className="flex justify-between mb-4">
       <Link
         href="/"
         className={`font-garamond text-5xl
