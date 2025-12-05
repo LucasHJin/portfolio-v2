@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${garamond.variable} ${dm.variable} h-full p-14 flex flex-col`}>
+      <body className={`${garamond.variable} ${dm.variable} h-full p-12 flex flex-col`}>
         <div className="flex-1">
           {children}
         </div>

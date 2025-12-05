@@ -5,29 +5,66 @@ export default function Home() {
   return (
     <div className="h-full w-full flex flex-row flex-nowrap gap-8">
       <div className="flex-1 text-xl">
-        <Navbar currPage="home"/>
+        <Navbar currPage="home" />
         <ul className="space-y-1">
           <li className="before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-            cs @ University of Waterloo
+            <a
+              href="https://cs.uwaterloo.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+            >
+              cs @ University of Waterloo
+            </a>
           </li>
           <li className="before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-            mle @ Wat.AI FlockRL
+            <a
+              href="https://watai.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+            >
+              mle @ Wat.AI FlockRL
+            </a>
           </li>
           <li className="font-medium before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
             recent!
           </li>
           <ul className="space-y-1 pl-6 mt-1">
             <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-              released Pixel Pets - 1900 downloads
+              released {' '}
+              <a
+                href="https://obsidian.md/plugins?id=pixel-pets"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+              >
+                Pixel Pets
+              </a>
+              {' '} - 1900 downloads
             </li>
             <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-              won 🥇 + $1K @ Hack404
+              won 🥇 + $1K @ {' '}
+              <a
+                href="https://hack404.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+              >
+                Hack404
+              </a>
             </li>
             <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-              started writing on Substack
-            </li>
-            <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-              working on OSS for automated FRC scouting with CV
+              working on OSS for {' '}
+              <a
+                href="https://github.com/LucasHJin/robotrack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+              >
+                automated FRC scouting
+              </a>
+              {' '} with CV
             </li>
           </ul>
           <li className="font-medium before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">

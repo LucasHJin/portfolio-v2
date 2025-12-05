@@ -13,7 +13,7 @@ import WebringIcon from "./icons/WebringIcon";
 export default function Footer() {
   return (
     <footer className="mt-4 flex flex-col">
-      <div className="flex justify-between mb-0.5">
+      <div className="flex justify-between mb-1">
         <nav className="flex gap-3 justify-start">
           <a
             href="https://github.com/LucasHJin"
