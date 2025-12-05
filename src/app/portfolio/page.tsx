@@ -1,10 +1,10 @@
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Portfolio() {
   return (
     <div>
       <Navbar />
-      BLANK SLATE
+      PROJECTS
     </div>
   );
 }

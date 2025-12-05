@@ -1,5 +1,6 @@
 import { EB_Garamond, DM_Sans } from 'next/font/google';
 import "./globals.css";
+import Footer from '@/components/Footer';
 
 // light, normal, semibold
 const dm = DM_Sans({
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${garamond.variable} ${dm.variable} p-12`}>
         {children}
+        <Footer />
       </body>
     </html>
   );
