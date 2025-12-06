@@ -76,3 +76,33 @@ body {
   from { background-position: 0 0; }
   to { background-position: -96px 0; } 
 }
+
+.pet-heart {
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: -5px;
+  transform: translateX(-50%);
+  background-image: url('/cat/heart.png');
+  background-size: cover;
+  image-rendering: pixelated;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1001;
+  animation: heart-float 1s ease-out forwards;
+}
+
+@keyframes heart-float {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-15px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px) scale(0.8);
+  }
+}
