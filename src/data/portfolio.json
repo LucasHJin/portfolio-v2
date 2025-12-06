@@ -21,7 +21,7 @@
   {
     "id": 2,
     "title": "Pixel Pets",
-    "description": "obsidian plugin to add virtual pets to your obsidian dom. 1900+ downloads and counting. still actively maintained and updated.",
+    "description": "obsidian plugin to add virtual pets to your obsidian dom. features include pet interactivity and a context aware c(h)at bot. 1900+ downloads and counting. still actively maintained and updated.",
     "image": "/pixel-pets.mp4",
     "links": {
       "github": "https://github.com/LucasHJin/obsidian-pets",

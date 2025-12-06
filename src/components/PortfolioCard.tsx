@@ -16,15 +16,28 @@ export default function PortfolioCard({
     );
   }
 
+  const isVideo = project.image.endsWith('.mp4');
+
   return (
     <div className="bg-highlight h-full w-5/12 rounded-xl overflow-y-auto flex flex-col gap-3 p-6">
       <div className="w-full aspect-video relative rounded-xl overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover"
-        />
+        {isVideo ? (
+          <video
+            src={project.image}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
+        )}
       </div>
 
       <div className="flex justify-between items-center">
@@ -35,7 +48,7 @@ export default function PortfolioCard({
               href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-background transition-colors duration-300"
+              className="hover:text-background transition-colors duration-500"
               title="GitHub"
             >
               <Github className="w-6"/>
@@ -46,7 +59,7 @@ export default function PortfolioCard({
               href={project.links.devpost}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-background transition-colors duration-300"
+              className="hover:text-background transition-colors duration-500"
               title="Devpost"
             >
               <DevpostIcon className="w-6"/>
@@ -57,7 +70,7 @@ export default function PortfolioCard({
               href={project.links.livesite}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-background transition-colors duration-300"
+              className="hover:text-background transition-colors duration-500"
               title="Live Site"
             >
               <MoveUpRight className="w-6"/>
