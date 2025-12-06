@@ -92,7 +92,10 @@ export default function PetCard() {
       />
 
       <div className="absolute top-6 left-6 text-white z-20 text-xl">
-        <p>Total times petted: {totalClicks ?? '...'}</p>
+        {totalClicks ? 
+          <p>Total times petted: {totalClicks}</p> :
+          null
+        }
       </div>
 
       <div

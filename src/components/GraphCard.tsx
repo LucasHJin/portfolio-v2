@@ -60,7 +60,6 @@ export default function GraphCard({
   if (loading) {
     return (
       <div className="bg-highlight h-full flex-1 rounded-xl flex items-center justify-center">
-        <p className="text-foreground">Loading...</p>
       </div>
     );
   }
