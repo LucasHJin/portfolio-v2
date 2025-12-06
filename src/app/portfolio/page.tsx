@@ -14,7 +14,7 @@ export default function Portfolio() {
     <div className="h-full w-full flex flex-row flex-nowrap gap-8">
       <div className="flex-1">
         <Navbar currPage="portfolio" />
-        <div className="space-y-2">
+        <div className="space-y-3 divide-y divide-black">
           {portfolioData.map((project) => (
             <PortfolioItem 
               key={project.id}
