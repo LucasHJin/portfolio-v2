@@ -22,13 +22,21 @@ export default function PortfolioItem({
     return <div>ERROR</div>;
   }
 
+  const linkToUse = project.links.livesite || project.links.github;
+
   return (
-    <div
-      onClick={() => onSelect(project)}
-      className="flex justify-between"
-    >
-      <p className="text-lg cursor-pointer hover:text-highlight transition-colors duration-300">{project.title}</p>
-      <a className="text-lg cursor-pointer hover:text-highlight transition-colors duration-300">↗</a>
+    <div onClick={() => onSelect(project)} className="flex justify-between">
+      <p className="text-lg cursor-pointer hover:text-highlight transition-colors duration-300">
+        {project.title}
+      </p>
+      <a
+        href={linkToUse}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-lg cursor-pointer hover:text-highlight transition-colors duration-300"
+      >
+        ↗
+      </a>
     </div>
   );
 }
