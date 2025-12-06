@@ -49,19 +49,19 @@ export default function Footer() {
         </nav>
         <nav className="flex gap-1 justify-end">
           <a
-            href="https://cs.uwatering.com/#www.lucasjin.co?nav=prev"
+            href="https://cs.uwatering.com/#www.lucasjin.ca?nav=prev"
           >
             <MoveLeft className="w-7 hover:text-highlight transition-colors duration-500"/>
           </a>{" "}
           <a
-            href="https://cs.uwatering.com/#www.lucasjin.co"
+            href="https://cs.uwatering.com/#www.lucasjin.ca"
             target="_blank"
             className="w-7 hover:text-highlight transition-colors duration-500"
           >
             <WebringIcon />
           </a>
           <a
-            href="https://cs.uwatering.com/#www.lucasjin.co?nav=next"
+            href="https://cs.uwatering.com/#www.lucasjin.ca?nav=next"
           >
             <MoveRight className="w-7 hover:text-highlight transition-colors duration-500"/>
           </a>
