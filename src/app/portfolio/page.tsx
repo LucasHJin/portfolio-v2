@@ -24,7 +24,7 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <PortfolioCard />
+      <PortfolioCard project={selectedProject} />
     </div>
   );
 }

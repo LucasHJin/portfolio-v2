@@ -140,18 +140,6 @@
   },
   {
     "id": 12,
-    "title": "Lazy Reps",
-    "description": "application to count your bicep curl reps for you. won solo in at-home track. idea to product in <12 hours @lazyhacks.",
-    "image": "/lazy_reps.png",
-    "links": {
-      "github": "https://github.com/LucasHJin/LazyReps",
-      "devpost": "https://dorahacks.io/buidl/20521/",
-      "livesite": ""
-    },
-    "tags": ["React.js", "FastAPI", "Tensorflow"]
-  },
-  {
-    "id": 13,
     "title": "Study Sphere",
     "description": "web app for studying (similar to reddit) with features like posts, comments and tags. made @uottahack6.",
     "image": "/study_sphere.jpeg",

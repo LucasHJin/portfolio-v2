@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import PetCard from "@/components/PetCard";
 import GraphCard from "@/components/GraphCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -67,14 +68,22 @@ export default function Home() {
               </a>
               {' '} with CV
             </li>
+            <li className="before:content-['✦'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
+              wanna know more? check out my {' '}
+              <Link
+                href="/Lucas_Jin_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
+              >
+                resume ↗
+              </Link>
+            </li>
           </ul>
           <li className="font-medium before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-            more...
+            other...
           </li>
           <ul className="space-y-1 pl-6 mt-1">
-            <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-              i ❤️ anime + cosplay
-            </li>
             <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
               avid bodybuilder (see below ↓)
             </li>
