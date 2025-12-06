@@ -1,9 +1,21 @@
 [
   {
+    "id": 2,
+    "title": "Pixel Pets",
+    "description": "obsidian plugin to add virtual pets to your obsidian dom. features include pet interactivity and a context aware c(h)at bot. 1900+ downloads and counting. still actively maintained and updated. simplified version on home page!",
+    "image": "/pixel-pets.mp4",
+    "links": {
+      "github": "https://github.com/LucasHJin/obsidian-pets",
+      "devpost": "",
+      "livesite": "https://obsidian.md/plugins?id=pixel-pets"
+    },
+    "tags": ["Typescript", "Obsidian Plugin API", "Esbuild", "IndexedDB", "RAG"]
+  },
+  {
     "id": 1,
     "title": "Lips Lips Revolution",
     "description": "lipsyncing karaoke game. won 'best use of mongodb' and hr for 'best use of symphonic labs api' @HTN in <36 hours. 40+ in person users. reverse engineered api to reduce latency (30s → 7s).",
-    "image": "/revolution.png",
+    "image": "/lipslipsrevolution.mp4",
     "links": {
       "github": "https://github.com/KaranChawlaD/lipslipsrevolution",
       "devpost": "https://devpost.com/software/lipslips-revolution",
@@ -19,28 +31,28 @@
     ]
   },
   {
-    "id": 2,
-    "title": "Pixel Pets",
-    "description": "obsidian plugin to add virtual pets to your obsidian dom. features include pet interactivity and a context aware c(h)at bot. 1900+ downloads and counting. still actively maintained and updated.",
-    "image": "/pixel-pets.mp4",
-    "links": {
-      "github": "https://github.com/LucasHJin/obsidian-pets",
-      "devpost": "",
-      "livesite": "https://obsidian.md/plugins?id=pixel-pets"
-    },
-    "tags": ["Typescript", "Obsidian Plugin API", "Esbuild", "IndexedDB", "RAG"]
-  },
-  {
     "id": 3,
     "title": "Cigym",
-    "description": "cursor for cinematic gym videos. python script + gui to automate editing gym videos (reduce time spent by 3x). still actively maintained.",
-    "image": "/cigym.jpeg",
+    "description": "cursor for cinematic gym videos. python script + gui to automate editing gym videos (reduce time spent by 4x).",
+    "image": "/cigym.mp4",
     "links": {
       "github": "https://github.com/LucasHJin/cigym",
       "devpost": "",
       "livesite": ""
     },
     "tags": ["Python", "Ffmpeg", "Whisper", "Pyside6", "OpenCV"]
+  },
+  {
+    "id": 13,
+    "title": "CNN Chess Bot",
+    "description": "residual cnn with se attention blocks (negligible searching) trained on 6+ million data points. ranked 6/70 at chesshacks 2025.",
+    "image": "/chesshacks.mp4",
+    "links": {
+      "github": "https://github.com/LucasHJin/chesshacks-model",
+      "devpost": "",
+      "livesite": ""
+    },
+    "tags": ["Python", "PyTorch", "NumPy", "Pandas"]
   },
   {
     "id": 4,
@@ -53,6 +65,18 @@
       "livesite": ""
     },
     "tags": ["Next.js", "Express.js", "PostgresSQL", "Docker"]
+  },
+  {
+    "id": 10,
+    "title": "STEM-E Volunteer App",
+    "description": "internal tooling platform to automate volunteering and support access to stem opportunities. 1000+ users.",
+    "image": "/steme.png",
+    "links": {
+      "github": "https://github.com/STEM-E-Youth-Career-Development-Program/volunteer-app",
+      "devpost": "",
+      "livesite": ""
+    },
+    "tags": ["Next.js", "Express.js", "Firebase", "Sheets API"]
   },
   {
     "id": 5,
@@ -79,6 +103,18 @@
     "tags": ["Expo", "React Native", "Firebase"]
   },
   {
+    "id": 9,
+    "title": "FRC 8729 Software",
+    "description": "code for the 2025 frc game 'reefscape'. slew rate limited swerve drive, pid driven mechanisms and photonvision april tag detection.",
+    "image": "/frc-2025.mp4",
+    "links": {
+      "github": "https://github.com/Spark-Youth-Robotics-Club-8729/2025-code",
+      "devpost": "",
+      "livesite": ""
+    },
+    "tags": ["Java", "Photonvision"]
+  },
+  {
     "id": 7,
     "title": "FRC 8729 Attendance Bot",
     "description": "attendance bot to track commitment of robotics team. 90+ users.",
@@ -94,37 +130,13 @@
     "id": 8,
     "title": "VocalizeVC",
     "description": "discord bot to provide more functionality to discord calls. includes captions, individual meeting stats, meeting summaries.",
-    "image": "/VVC.png",
+    "image": "/vvc.png",
     "links": {
       "github": "https://github.com/LucasHJin/VocalizeVC",
       "devpost": "",
       "livesite": ""
     },
     "tags": ["Python", "HTML/CSS", "Discord API", "Whisper"]
-  },
-  {
-    "id": 9,
-    "title": "FRC 8729 Software",
-    "description": "code for the 2025 frc game 'reefscape'. slew rate limited swerve drive and photonvision april tag detection.",
-    "image": "/syrc.png",
-    "links": {
-      "github": "https://github.com/Spark-Youth-Robotics-Club-8729/2025-code",
-      "devpost": "",
-      "livesite": ""
-    },
-    "tags": ["Java", "Photonvision"]
-  },
-  {
-    "id": 10,
-    "title": "STEM-E Volunteer App",
-    "description": "platform to automate volunteering and support access to stem opportunities. 1000+ future users.",
-    "image": "/steme.png",
-    "links": {
-      "github": "https://github.com/STEM-E-Youth-Career-Development-Program/volunteer-app",
-      "devpost": "",
-      "livesite": ""
-    },
-    "tags": ["Next.js", "Express.js", "Firebase", "Sheets API"]
   },
   {
     "id": 11,
@@ -142,7 +154,7 @@
     "id": 12,
     "title": "Study Sphere",
     "description": "web app for studying (similar to reddit) with features like posts, comments and tags. made @uottahack6.",
-    "image": "/study_sphere.jpeg",
+    "image": "/study-sphere.jpeg",
     "links": {
       "github": "https://github.com/LucasHJin/StudySphere",
       "devpost": "https://devpost.com/software/studiessphere",
