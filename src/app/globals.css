@@ -40,3 +40,39 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Cat animations */
+@keyframes sprite-animation-idle {
+  from { background-position: 0 0; }
+  to { background-position: -224px 0; }
+}
+
+@keyframes sprite-animation-idle2 {
+  from { background-position: 0 0; }
+  to { background-position: -448px 0; }
+}
+
+@keyframes sprite-animation-jump {
+  from { background-position: 0 0; }
+  to { background-position: -416px 0; }
+}
+
+@keyframes sprite-animation-jump2 {
+  from { background-position: 0 0; }
+  to { background-position: -288px 0; }
+}
+
+@keyframes sprite-animation-run {
+  from { background-position: 0 0; }
+  to { background-position: -224px 0; }
+}
+
+@keyframes sprite-animation-sit {
+  from { background-position: 0 0; }
+  to { background-position: -96px 0; }
+}
+
+@keyframes sprite-animation-sleep {
+  from { background-position: 0 0; }
+  to { background-position: -96px 0; } 
+}

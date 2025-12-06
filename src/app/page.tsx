@@ -3,6 +3,8 @@ import PetCard from "@/components/PetCard";
 import GraphCard from "@/components/GraphCard";
 import Link from "next/link";
 
+// CHECK -> BOTTOM ENDS AT SLIGHTLY DIFFERENT PLACES
+
 export default function Home() {
   return (
     <div className="h-full w-full flex flex-row flex-nowrap gap-8">
