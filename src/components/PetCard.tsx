@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ANIMATIONS } from '@/lib/PetConfigs';
 import { Pet } from '@/lib/Pet';
 import Image from 'next/image';
+import { useClickTracking } from '@/hooks/useClickTracking';
 
 export default function PetCard() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -13,6 +14,8 @@ export default function PetCard() {
   const [currentAnimation, setCurrentAnimation] = useState('idle');
   const [hearts, setHearts] = useState<{ id: number; left: string }[]>([]);
   const heartIdRef = useRef(0);
+
+  const { handleClick: trackClick, totalClicks } = useClickTracking();
 
   // Create new pet on load (clean up after as well)
   useEffect(() => {
@@ -66,6 +69,8 @@ export default function PetCard() {
     setTimeout(() => {
       setHearts(prev => prev.filter(heart => heart.id !== id));
     }, 1000);
+
+    trackClick();
   };
 
   const anim = ANIMATIONS[currentAnimation];
@@ -83,8 +88,12 @@ export default function PetCard() {
         style={{ imageRendering: 'pixelated' }}
         priority
         unoptimized
-        quality={100}
+        quality={75}
       />
+
+      <div className="absolute top-6 left-6 text-white z-20 text-xl">
+        <p>Total times petted: {totalClicks ?? '...'}</p>
+      </div>
 
       <div
         className="absolute cursor-pointer z-10"
