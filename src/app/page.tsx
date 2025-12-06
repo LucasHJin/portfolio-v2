@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar";
 import PetCard from "@/components/PetCard";
+import GraphCard from "@/components/GraphCard";
 
 export default function Home() {
   return (
     <div className="h-full w-full flex flex-row flex-nowrap gap-8">
-      <div className="flex-1 text-xl">
+      <div className="flex-1 text-xl flex flex-col">
         <Navbar currPage="home" />
         <ul className="space-y-1">
           <li className="before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
@@ -79,6 +80,10 @@ export default function Home() {
             </li>
           </ul>
         </ul>
+        <div className="flex gap-6 flex-1 mt-5 mb-1">
+          <GraphCard />
+          <GraphCard />
+        </div>
       </div>
       <PetCard />
     </div>
