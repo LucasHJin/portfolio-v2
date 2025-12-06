@@ -50,7 +50,7 @@ export default function PetCard() {
 
         // Example: make scale proportional to container width
         // Here, 400px container width = scale 1, 800px = scale 2
-        const newScale = Math.max(1, width / 400);
+        const newScale = Math.max(1, width / 300);
         setCatScale(newScale);
       }
     };
@@ -113,7 +113,7 @@ export default function PetCard() {
         onClick={handleClick}
         style={{
           left: `${currentX}%`,
-          top: '85%',
+          top: '90%',
           transform: `translate(-50%, -100%) scaleX(${direction}) scale(${catScale})`,
           width: `${anim.frameWidth}px`,
           height: `${anim.frameHeight}px`,

@@ -28,14 +28,14 @@ export default function PortfolioCard({
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-bottom"
           />
         ) : (
           <Image
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover"
+            className="object-cover object-bottom"
           />
         )}
       </div>
