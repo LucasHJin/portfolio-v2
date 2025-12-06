@@ -91,7 +91,7 @@ export default function Home() {
             </li>
           </ul>
         </ul>
-        <div className="flex gap-6 flex-1 mt-5 mb-1">
+        <div className="flex gap-6 flex-1 mt-5">
           <GraphCard />
           <GraphCard />
         </div>
