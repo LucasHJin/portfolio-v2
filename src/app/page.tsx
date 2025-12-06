@@ -92,8 +92,18 @@ export default function Home() {
           </ul>
         </ul>
         <div className="flex gap-6 flex-1 mt-5">
-          <GraphCard />
-          <GraphCard />
+          <GraphCard 
+            title="Body Weight ↗"
+            apiEndpoint="/api/weight-tracking"
+            dataKey="weight"
+            sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1615243315#gid=1615243315"
+          />
+          <GraphCard 
+            title="Body Weight ↗"
+            apiEndpoint="/api/weight-tracking"
+            dataKey="weight"
+            sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1615243315#gid=1615243315"
+          />
         </div>
       </div>
       <PetCard />
