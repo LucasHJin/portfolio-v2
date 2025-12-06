@@ -69,12 +69,12 @@ export default function GraphCard({
   const backgroundColor = styles.getPropertyValue('--background').trim() || '#ffffff';
 
   return (
-    <div className="bg-highlight h-full flex-1 rounded-xl p-6 flex flex-col">
+    <div className="bg-highlight h-full flex-1 rounded-xl p-3 md:p-4 lg:p-6 flex flex-col">
       <a 
         href={sheetUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-foreground text-2xl mb-4 hover:text-background transition-colors duration-300"
+        className="text-foreground text-sm md:text-l lg:text-2xl mb-4 hover:text-background transition-colors duration-300"
       >
         {title}
       </a>

@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-screen">
-      <body className={`${garamond.variable} ${dm.variable} h-screen p-12 flex flex-col`}>
+      <body className={`${garamond.variable} ${dm.variable} h-screen p-8 md:p-12 flex flex-col`}>
         <div className="flex-1 min-h-0">
           {children}
         </div>

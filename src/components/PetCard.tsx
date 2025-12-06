@@ -13,6 +13,7 @@ export default function PetCard() {
   const [direction, setDirection] = useState<1 | -1>(1);
   const [currentAnimation, setCurrentAnimation] = useState('idle');
   const [hearts, setHearts] = useState<{ id: number; left: string }[]>([]);
+  const [catScale, setCatScale] = useState(2);
   const heartIdRef = useRef(0);
 
   const { handleClick: trackClick, totalClicks } = useClickTracking();
@@ -21,7 +22,7 @@ export default function PetCard() {
   useEffect(() => {
     const pet = new Pet(
       ANIMATIONS,
-      65,
+      30 * catScale * 0.85,
       setCurrentX,
       setDirection,
       setCurrentAnimation
@@ -44,11 +45,18 @@ export default function PetCard() {
   useEffect(() => {
     const updateWidth = () => {
       if (containerRef.current && petInstanceRef.current) {
-        petInstanceRef.current.setContainerWidth(containerRef.current.offsetWidth);
+        const width = containerRef.current.offsetWidth;
+        petInstanceRef.current.setContainerWidth(width);
+
+        // Example: make scale proportional to container width
+        // Here, 400px container width = scale 1, 800px = scale 2
+        const newScale = Math.max(1, width / 400);
+        setCatScale(newScale);
       }
     };
 
     window.addEventListener('resize', updateWidth);
+    updateWidth();
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
@@ -78,20 +86,20 @@ export default function PetCard() {
   return (
     <div
       ref={containerRef}
-      className="h-full w-5/12 rounded-xl relative overflow-hidden"
+      className="w-full h-1/5 lg:h-full lg:w-5/12 rounded-xl relative overflow-hidden"
     >
       <Image
         src="/cat/background.png"
         alt="background"
         fill
-        className="object-cover"
+        className="object-cover object-bottom"
         style={{ imageRendering: 'pixelated' }}
         priority
         unoptimized
         quality={75}
       />
 
-      <div className="absolute top-6 left-6 text-white z-20 text-xl">
+      <div className="absolute top-4 left-4 lg:top-6 lg:left-6 text-white z-20 text-l lg:text-xl">
         {totalClicks ? 
           <p>Total times petted: {totalClicks}</p> :
           null
@@ -105,8 +113,8 @@ export default function PetCard() {
         onClick={handleClick}
         style={{
           left: `${currentX}%`,
-          top: '87%',
-          transform: `translate(-50%, -50%) scaleX(${direction}) scale(2)`,
+          top: '85%',
+          transform: `translate(-50%, -100%) scaleX(${direction}) scale(${catScale})`,
           width: `${anim.frameWidth}px`,
           height: `${anim.frameHeight}px`,
           backgroundImage: `url(${anim.spriteUrl})`,

@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="h-full w-full flex flex-row flex-nowrap gap-8">
-      <div className="flex-1 text-xl flex flex-col">
+    <div className="h-full w-full flex gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-col lg:flex-row">
+      <div className="flex-1 lg:text-xl md:text-l text-base flex flex-col">
         <Navbar currPage="home" />
         <ul className="space-y-1">
           <li className="before:content-['◆'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
@@ -85,19 +85,19 @@ export default function Home() {
           </li>
           <ul className="space-y-1 pl-6 mt-1">
             <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
-              avid bodybuilder (see below ↓)
+              avid bodybuilder ↓
             </li>
           </ul>
         </ul>
-        <div className="flex gap-6 flex-1 mt-5">
+        <div className="flex gap-4 md:gap-6 flex-1 mt-5">
           <GraphCard 
-            title="Body Weight ↗"
+            title="Bodyweight ↗"
             apiEndpoint="/api/weight-tracking"
             dataKey="weight"
             sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1615243315#gid=1615243315"
           />
           <GraphCard 
-            title="Gym Progress ↗"
+            title="Workouts ↗"
             apiEndpoint="/api/gym-progress"
             dataKey="total_change_percent"
             sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1757490826#gid=1757490826"

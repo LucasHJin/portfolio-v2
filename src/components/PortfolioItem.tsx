@@ -28,7 +28,7 @@ export default function PortfolioItem({
     <div className="flex justify-between">
       <p
         onClick={() => onSelect(project)}
-        className="text-xl cursor-pointer hover:text-highlight transition-colors duration-300"
+        className="text-base md:text-l lg:text-xl cursor-pointer hover:text-highlight transition-colors duration-300"
       >
         {project.title}
       </p>
@@ -36,7 +36,7 @@ export default function PortfolioItem({
         href={linkToUse}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-lg cursor-pointer hover:text-highlight transition-colors duration-300"
+        className="text-base md:text-l lg:text-xl cursor-pointer hover:text-highlight transition-colors duration-300"
       >
         ↗
       </a>
