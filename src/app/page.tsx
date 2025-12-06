@@ -13,7 +13,7 @@ export default function Home() {
               href="https://cs.uwaterloo.ca/"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+              className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
             >
               cs @ University of Waterloo
             </a>
@@ -23,7 +23,7 @@ export default function Home() {
               href="https://watai.ca/"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+              className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
             >
               mle @ Wat.AI FlockRL
             </a>
@@ -38,7 +38,7 @@ export default function Home() {
                 href="https://obsidian.md/plugins?id=pixel-pets"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
               >
                 Pixel Pets
               </a>
@@ -50,7 +50,7 @@ export default function Home() {
                 href="https://hack404.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
               >
                 Hack404
               </a>
@@ -61,7 +61,7 @@ export default function Home() {
                 href="https://github.com/LucasHJin/robotrack"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full font-medium"
+                className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full"
               >
                 automated FRC scouting
               </a>
