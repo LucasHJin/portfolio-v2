@@ -25,8 +25,11 @@ export default function PortfolioItem({
   const linkToUse = project.links.livesite || project.links.github;
 
   return (
-    <div onClick={() => onSelect(project)} className="flex justify-between">
-      <p className="text-lg cursor-pointer hover:text-highlight transition-colors duration-300">
+    <div className="flex justify-between">
+      <p
+        onClick={() => onSelect(project)}
+        className="text-xl cursor-pointer hover:text-highlight transition-colors duration-300"
+      >
         {project.title}
       </p>
       <a
