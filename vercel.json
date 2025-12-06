@@ -1,6 +1,12 @@
 {
-  "crons": [{
-    "path": "/api/cron/sync-weight-tracking",
-    "schedule": "0 2 * * *"
-  }]
+  "crons": [
+    {
+      "path": "/api/cron/sync-weight-tracking",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/sync-gym-progress",
+      "schedule": "0 3 * * *"
+    }
+  ]
 }

@@ -3,8 +3,6 @@ import PetCard from "@/components/PetCard";
 import GraphCard from "@/components/GraphCard";
 import Link from "next/link";
 
-// CHECK -> BOTTOM ENDS AT SLIGHTLY DIFFERENT PLACES
-
 export default function Home() {
   return (
     <div className="h-full w-full flex flex-row flex-nowrap gap-8">
@@ -99,10 +97,10 @@ export default function Home() {
             sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1615243315#gid=1615243315"
           />
           <GraphCard 
-            title="Body Weight ↗"
-            apiEndpoint="/api/weight-tracking"
-            dataKey="weight"
-            sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1615243315#gid=1615243315"
+            title="Gym Progress ↗"
+            apiEndpoint="/api/gym-progress"
+            dataKey="total_change_percent"
+            sheetUrl="https://docs.google.com/spreadsheets/d/1-qu0lgsPTDiDaWsD4xHvD2gypEKCt2hmlao_lrVnJTU/edit?gid=1757490826#gid=1757490826"
           />
         </div>
       </div>

@@ -101,6 +101,7 @@ export default function GraphCard({
             <Line 
               type="monotone" 
               dataKey={dataKey} 
+              name={dataKey === "weight" ? "weight" : "total percent change"}
               stroke={foregroundColor}
               strokeWidth={2}
               dot={false}
