@@ -42,7 +42,7 @@ export default function PortfolioCard({
 
       <div className="flex justify-between items-center">
         <h2 className="text-l md:text-xl lg:text-2xl font-semibold">{project.title}</h2>
-        <div className="flex gap-3">
+        <div className="flex gap-2 md:gap-3 items-center">
           {project.links.github && (
             <a
               href={project.links.github}
