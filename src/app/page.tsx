@@ -43,7 +43,7 @@ export default function Home() {
               >
                 Pixel Pets
               </a>
-              {' '} - 1900 downloads
+              {' '} - 1900 downloads (try petting my cat)
             </li>
             <li className="before:content-['↳'] before:mr-2 before:transition-colors before:duration-300 hover:before:text-highlight">
               won 🥇 + $1K @ {' '}
