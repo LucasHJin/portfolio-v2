@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { EB_Garamond, DM_Sans } from 'next/font/google';
 import "./globals.css";
 import Footer from '@/components/Footer';
+import { Analytics } from "@vercel/analytics/next"
 
 // light, normal, semibold
 const dm = DM_Sans({
@@ -107,6 +108,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
