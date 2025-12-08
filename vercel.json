@@ -6,7 +6,7 @@
     },
     {
       "path": "/api/cron/sync-gym-progress",
-      "schedule": "0 3 * * *"
+      "schedule": "0 3 * * 1"
     }
   ]
 }
