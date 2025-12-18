@@ -17,7 +17,7 @@
     "description": "lipsyncing karaoke game. won 'best use of mongodb' and hr for 'best use of symphonic labs api' @HTN in <36 hours. 40+ in person users. reverse engineered api to reduce latency (30s → 7s).",
     "image": "/lipslipsrevolution.mp4",
     "links": {
-      "github": "https://github.com/KaranChawlaD/lipslipsrevolution",
+      "github": "https://github.com/LucasHJin/lipslipsrevolution",
       "devpost": "https://devpost.com/software/lipslips-revolution",
       "livesite": "https://lipslipsrevolution.vercel.app/challenge"
     },
